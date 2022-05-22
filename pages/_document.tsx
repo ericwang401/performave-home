@@ -14,6 +14,16 @@ export default function Document() {
         <meta content="We are a community of developers and designers passionate in providing high quality tools to everyone using cutting-edge technology" property="og:description" />
         <meta content="https://performave.com/" property="og:url" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBZGLB758P"></script>
+        <script dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-VBZGLB758P');`}}
+        />
       </Head>
       <body>
         <Main />
