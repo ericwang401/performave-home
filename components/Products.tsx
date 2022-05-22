@@ -2,40 +2,37 @@ import Image from 'next/image'
 
 const posts = [
     {
-        title: 'Boost your conversion rate',
-        href: '#',
-        category: 'Article',
+        title: 'Stratum Panel',
+        href: 'https://github.com/StratumPanel/Stratum-Panel',
+        category: 'Productivity & Business',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
+            'An open-source panel created with Vue and Laravel. It is a simple and easy to use panel for you or your clients to manage their servers in Proxmox.',
         imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+            'https://cdn.discordapp.com/attachments/773055094396026880/926901843274137600/unknown.png',
     },
     {
-        title: 'How to use search engine optimization to drive sales',
-        href: '#',
-        category: 'Video',
+        title: 'Pane Looking Glass',
+        href: 'https://github.com/ericwang401/pane',
+        category: 'Productivity & Business',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.',
+            'Pane allows people to securely benchmark your server\'s network performance. It displays basic information about your servers in a beautiful and elegant way.',
         imageUrl:
-            'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+            'https://camo.githubusercontent.com/b484e029667a2543162abf898378320622d810b9d0b7327440ab058b51b22b41/68747470733a2f2f696d6775722e636f6d2f6a397870504a4c2e706e67',
     },
     {
-        title: 'Improve your customer experience',
-        href: '#',
-        category: 'Case Study',
+        title: 'Echo Soundboard',
+        href: 'https://github.com/ericwang401/echo-soundboard',
+        category: 'Productivity',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.',
+            'A great tool for playing and mixing sound effects. Echo allows you to troll your friends in-game with a variety of sounds.',
         imageUrl:
-            'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+            'https://camo.githubusercontent.com/9fc36c76b2aa004dc52af1332dc59da0c06407004b689dc81a068f6305a062d4/68747470733a2f2f692e696d6775722e636f6d2f6c6c5663704c632e706e67',
     },
 ]
 
 const Products = () => {
     return (
-        <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-            <div className="absolute inset-0">
-                <div className="bg-white h-1/3 sm:h-2/3" />
-            </div>
+        <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8" id="our-products">
             <div className="relative max-w-7xl mx-auto">
                 <div className="text-center">
                     <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Our Products</h2>

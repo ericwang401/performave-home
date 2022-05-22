@@ -5,67 +5,23 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 
 const navigation = [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
+    { name: 'About Us', href: '#about-us' },
+    { name: 'Products', href: '#our-products' },
+    { name: 'Platforms', href: '#platforms' },
 ]
 
 const Hero = () => {
     return (
         <div className="bg-gray-50">
             <div className="relative overflow-hidden">
-                <div className="absolute inset-y-0 h-full w-full" aria-hidden="true">
-                    <div className="relative h-full">
-                        <svg
-                            className="absolute right-full transform translate-y-1/3 translate-x-1/4 md:translate-y-1/2 sm:translate-x-1/2 lg:translate-x-full"
-                            width={404}
-                            height={784}
-                            fill="none"
-                            viewBox="0 0 404 784"
-                        >
-                            <defs>
-                                <pattern
-                                    id="e229dbec-10e9-49ee-8ec3-0286ca089edf"
-                                    x={0}
-                                    y={0}
-                                    width={20}
-                                    height={20}
-                                    patternUnits="userSpaceOnUse"
-                                >
-                                    <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
-                                </pattern>
-                            </defs>
-                            <rect width={404} height={784} fill="url(#e229dbec-10e9-49ee-8ec3-0286ca089edf)" />
-                        </svg>
-                        <svg
-                            className="absolute left-full transform -translate-y-3/4 -translate-x-1/4 sm:-translate-x-1/2 md:-translate-y-1/2 lg:-translate-x-3/4"
-                            width={404}
-                            height={784}
-                            fill="none"
-                            viewBox="0 0 404 784"
-                        >
-                            <defs>
-                                <pattern
-                                    id="d2a68204-c383-44b1-b99f-42ccff4e5365"
-                                    x={0}
-                                    y={0}
-                                    width={20}
-                                    height={20}
-                                    patternUnits="userSpaceOnUse"
-                                >
-                                    <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
-                                </pattern>
-                            </defs>
-                            <rect width={404} height={784} fill="url(#d2a68204-c383-44b1-b99f-42ccff4e5365)" />
-                        </svg>
-                    </div>
-                </div>
 
                 <div className="relative pt-6 pb-16 sm:pb-24">
                     <Popover>
                         <div className="max-w-7xl mx-auto px-4 sm:px-6">
                             <nav className="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
+                                <div className='hidden grow md:flex items-center'>
+                                    <h3 className='font-bold text-lg absolute'>Performave</h3>
+                                </div>
                                 <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
                                     <div className="flex items-center justify-between w-full md:w-auto">
                                         <a href="#">
@@ -85,13 +41,14 @@ const Hero = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="hidden md:flex md:space-x-10">
+                                <div className="hidden grow-0 md:flex md:space-x-10">
                                     {navigation.map((item) => (
                                         <a key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900">
                                             {item.name}
                                         </a>
                                     ))}
                                 </div>
+                                <div className='grow' />
                                 {/* <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
                                     <span className="inline-flex rounded-md shadow">
                                         <a
